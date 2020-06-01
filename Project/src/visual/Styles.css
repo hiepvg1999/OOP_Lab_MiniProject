@@ -1,0 +1,48 @@
+.button {
+	-fx-background-color: #2196f3;
+	-fx-font-weight: bold;
+	-fx-background-radius:16;
+	-fx-font-size:12;
+	-fx-text-fill:white;
+}
+.button:hover{
+	-fx-background-color: white;
+	-fx-font-weight: bold;
+	-fx-background-radius:16;
+	-fx-font-size:12;
+	-fx-text-fill:#2196f3;
+	-fx-border-color:#2196f3;
+	-fx-border-radius:20;
+	-fx-border-width:3;
+}
+
+.button:pressed {
+	-fx-background-color: white;
+	-fx-font-weight: bold;
+	-fx-background-radius:16;
+	-fx-font-size:12;
+	-fx-text-fill:#2196f3;
+	-fx-border-color:#2196f3;
+	-fx-border-radius:20;
+	-fx-border-width:3;
+	-fx-rotate:10;
+}
+#anchorPane1 {
+	-fx-background-color: #FFF8DC;
+	-fx-font-weight: bold;
+	-fx-font-size:12;
+	-fx-text-fill:white;
+}
+#mainPane{
+	-fx-background-color: white;
+}
+#textArea {
+	-fx-font-family: Consolas;
+    -fx-font-size: 15;
+    -fx-text-fill: #ffffff;
+    -fx-display-caret:true;
+	
+}
+#textArea .content {
+	-fx-background-color: #000000;
+}

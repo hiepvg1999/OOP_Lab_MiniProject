@@ -107,6 +107,7 @@ public class Controller implements Initializable {
         });
 		speedSlider.valueProperty().addListener((observable,oldValue,newValue)->{
 			timer = (int)(Dimensions.DURATION * newValue.doubleValue());
+			System.out.println(timer);
 		});
 		comboBox.getSelectionModel().select(0);
 		speedSlider.setValue(3);

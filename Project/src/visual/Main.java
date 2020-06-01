@@ -16,7 +16,10 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("ViewController.fxml"));
         primaryStage.setTitle("OOP lab");
-        primaryStage.setScene(new Scene(root,Dimensions.SCENE_WIDTH,Dimensions.SCENE_HEIGHT));
+        Scene scene =new Scene(root,Dimensions.SCENE_WIDTH,Dimensions.SCENE_HEIGHT);
+        scene.getStylesheets().add(getClass().getResource("Styles.css").toExternalForm());
+        primaryStage.setScene(scene);
+    
         primaryStage.setResizable(false);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
 
