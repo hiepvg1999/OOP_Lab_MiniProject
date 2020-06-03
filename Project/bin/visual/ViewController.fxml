@@ -12,6 +12,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+
 <AnchorPane prefHeight="536.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.Controller">
    <children>
       <AnchorPane fx:id="anchorPane1" prefHeight="536.0" prefWidth="153.0">
@@ -36,13 +37,14 @@
             <TextField fx:id="textField" layoutX="61.0" layoutY="43.0" prefHeight="25.0" prefWidth="48.0" />
             <Group layoutX="134.0" layoutY="28.0">
                <children>
-                  <Button fx:id="deleteButton" layoutX="74.0" layoutY="14.0" mnemonicParsing="false" text="Button" onAction="#handleDeleteClicked" />
-                  <Button fx:id="searchButton" layoutX="148.0" layoutY="14.0" mnemonicParsing="false" text="Search" onAction="#handleSearchClicked" />
-                  <Button fx:id="insertButton" layoutY="14.0" mnemonicParsing="false" text="Button" onAction="#handleInsertClicked"/>
+                  <Button fx:id="deleteButton" layoutX="74.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDeleteClicked" text="Button" />
+                  <Button fx:id="searchButton" layoutX="148.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSearchClicked" text="Search" />
+                  <Button fx:id="insertButton" layoutY="14.0" mnemonicParsing="false" onAction="#handleInsertClicked" text="Button" />
                </children>
             </Group>
             <Pane fx:id="mainPane" layoutX="9.0" layoutY="85.0" prefHeight="332.0" prefWidth="332.0" />
-            <Button contentDisplay="TEXT_ONLY" layoutX="321.0" layoutY="2.0" mnemonicParsing="false" text="X" onAction="#close"/>
+            <Button fx:id="closeButton" contentDisplay="TEXT_ONLY" layoutX="321.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" text="X" />
+            <Button fx:id="minimizeButton" contentDisplay="TEXT_ONLY" layoutX="290.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" text="━" />
          </children>
       </AnchorPane>
    </children>

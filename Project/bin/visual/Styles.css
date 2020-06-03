@@ -5,6 +5,33 @@
 	-fx-font-size:12;
 	-fx-text-fill:white;
 }
+#closeButton{
+	-fx-background-color: #CCCCCC;
+}
+#minimizeButton{
+	-fx-background-color: white;
+	-fx-text-fill:black;
+}
+#closeButton:hover{
+	-fx-background-color: #AA0000;
+	-fx-font-weight: bold;
+	-fx-background-radius:16;
+	-fx-font-size:12;
+	-fx-text-fill:white;
+	-fx-border-color:#AA0000;
+	-fx-border-radius:20;
+	-fx-border-width:1;
+}
+#minimizeButton:hover{
+	-fx-background-color: #2196f3;
+	-fx-font-weight: bold;
+	-fx-background-radius:16;
+	-fx-font-size:12;
+	-fx-text-fill:white;
+	-fx-border-color: #2196f3;
+	-fx-border-radius:20;
+	-fx-border-width:1;
+}
 .button:hover{
 	-fx-background-color: white;
 	-fx-font-weight: bold;
@@ -13,7 +40,7 @@
 	-fx-text-fill:#2196f3;
 	-fx-border-color:#2196f3;
 	-fx-border-radius:20;
-	-fx-border-width:3;
+	-fx-border-width:1;
 }
 
 .button:pressed {
@@ -24,11 +51,11 @@
 	-fx-text-fill:#2196f3;
 	-fx-border-color:#2196f3;
 	-fx-border-radius:20;
-	-fx-border-width:3;
+	-fx-border-width:1;
 	-fx-rotate:10;
 }
 #anchorPane1 {
-	-fx-background-color: #FFF8DC;
+	-fx-background-color: #FFFF66;
 	-fx-font-weight: bold;
 	-fx-font-size:12;
 	-fx-text-fill:white;

@@ -22,6 +22,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -59,6 +60,7 @@ public class Controller implements Initializable {
 	@FXML
 	private Pane mainPane;
 	
+	private ScrollPane testPane;
 	public static int timer;
 	private LinkedList linkedList = new LinkedList();
 	private Stack stack = new Stack();
@@ -203,7 +205,7 @@ public class Controller implements Initializable {
 	    	textArea.setText("Element not found");
 	    }
 		}else {
-			textArea.setText("Not input");
+			textArea.setText("No input");
 		}		
 		}else if(comboBox.getSelectionModel().getSelectedIndex()==1){
 			ArrayList<Integer> stackList = stack.toArrayList();
@@ -226,6 +228,10 @@ public class Controller implements Initializable {
 	
 	
 	public void handleSearchClicked(){
+		if(textField.getText().compareTo("")==0){
+			textArea.setText("No input");
+		}else
+		{
 		int value = Integer.parseInt(textField.getText());
 		int i=0;
 		int flag=0;
@@ -281,7 +287,7 @@ public class Controller implements Initializable {
 			else
 				textArea.setText("Element "+value+" not found");
 		}		
-		
+		}
 		
 	}
 	public void minimize(ActionEvent e ) {
