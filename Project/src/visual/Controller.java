@@ -123,13 +123,17 @@ public class Controller implements Initializable {
 			if(newValue.toString().compareTo("Linked List")==0){
 				insertButton.setText("Insert");
 				deleteButton.setText("Delete");
-				mainPane.getChildren().remove(0, stack.getLength());
+				if(mainPane.getChildren() != null){
+					mainPane.getChildren().remove(0, stack.getLength());
+				}
 				positionX =10;
 				positionY=150;
 			}else if(newValue.toString().compareTo("Stack")==0){
 				insertButton.setText("Push");
 				deleteButton.setText("Pop");
-				mainPane.getChildren().remove(0, linkedList.getLength());
+				if(mainPane.getChildren() != null){
+					mainPane.getChildren().remove(0, linkedList.getLength());
+				}
 				positionX =150;
 				positionY=150;
 			}
